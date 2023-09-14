@@ -26,6 +26,7 @@
     "react/react-in-jsx-scope": "off",
     "no-multi-spaces": "error",
     "prettier/prettier": ["error", { "endOfLine": "auto" }]
+    // "@typescript-eslint/explicit-function-return-type": ["error", { "allowNames": [] }]
   },
   "settings": {
     "import/resolver": {
