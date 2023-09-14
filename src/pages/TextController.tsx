@@ -1,7 +1,7 @@
 import { useRecoilState } from 'recoil';
 import textState from '../recoil/example/atom';
 
-const CharacterController = () => {
+const TextController = () => {
   const [text, setText] = useRecoilState(textState);
 
   const add = () => {
@@ -20,4 +20,4 @@ const CharacterController = () => {
     </>
   );
 };
-export default CharacterController;
+export default TextController;

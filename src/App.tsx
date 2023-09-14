@@ -1,14 +1,14 @@
 import { RecoilRoot } from 'recoil';
 
 import './App.css';
-import CharacterController from './pages/CharacterController';
+import TextController from './pages/TextController';
 import TextChaser from './pages/TextChaser';
 
 function App() {
   return (
     <RecoilRoot>
       <TextChaser />
-      <CharacterController />
+      <TextController />
     </RecoilRoot>
   );
 }
