@@ -1,14 +1,20 @@
 import { RecoilRoot } from 'recoil';
 
 import './App.css';
-import TextController from './pages/TextController';
-import TextChaser from './pages/TextChaser';
+
+import { Link } from 'react-router-dom';
+import { AppRouter } from './AppRouter';
 
 function App() {
   return (
     <RecoilRoot>
-      <TextChaser />
-      <TextController />
+      <Link to="/text">
+        <button>text</button>
+      </Link>
+      <Link to="/d3">
+        <button>d3chart</button>
+      </Link>
+      <AppRouter />
     </RecoilRoot>
   );
 }

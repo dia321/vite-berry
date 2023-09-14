@@ -26,3 +26,6 @@ dist-ssr
 yarn.lock
 .yarn/
 .vite/
+
+.yarnrc.yml
+.ponp.cjs
