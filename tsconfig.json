@@ -19,8 +19,15 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "allowJs": true
+    "allowJs": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@hooks/*": ["src/hooks/*"],
+      "@api/*": ["src/api/*"],
+      "@stores/*": ["src/stores/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["src", "stores/dog"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

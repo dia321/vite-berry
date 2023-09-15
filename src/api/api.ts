@@ -1,7 +1,7 @@
 import { API } from './instance';
 
-export const sampleAPI = () =>
+export const getRandomDogAPI = () =>
   API.request({
     method: 'get',
-    url: ''
+    url: '/api/breeds/image/random'
   });

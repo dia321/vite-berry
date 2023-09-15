@@ -7,10 +7,21 @@ const apiInstance = (url: string, options?: { [key: string]: string }): AxiosIns
   const instance = axios.create({
     baseURL: url,
     timeout: 1000,
-    headers: { 'X-Custom-Header': 'foobar' },
+    headers: {
+      'X-Custom-Header': 'foobar',
+      'Content-Type': 'application/json'
+    },
     ...options,
     transformResponse: [(data) => JSONbig.parse(data)]
   });
+  instance.interceptors.response.use(
+    (response) => {
+      return JSON.parse(JSON.stringify(response));
+    },
+    (error) => {
+      return Promise.reject(error);
+    }
+  );
   return instance;
 };
 

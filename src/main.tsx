@@ -6,7 +6,17 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: 0,
+      useErrorBoundary: true
+    },
+    mutations: {
+      useErrorBoundary: true
+    }
+  }
+});
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
