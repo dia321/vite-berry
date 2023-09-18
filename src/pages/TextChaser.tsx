@@ -1,5 +1,5 @@
 import { useRecoilState } from 'recoil';
-import { textState } from '../stores/example';
+import { textState } from '@stores/example';
 
 const TextChaser = () => {
   const [text] = useRecoilState(textState);

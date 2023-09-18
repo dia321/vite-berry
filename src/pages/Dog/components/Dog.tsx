@@ -1,18 +1,17 @@
-import { useRecoilState } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { dogState } from '@stores/dog';
 import { useGetRandomDog } from '../hooks/queries';
-import { useEffect } from 'react';
 
 const Dog = () => {
-  const [dogObj, setdogObj] = useRecoilState(dogState);
-  const query = useGetRandomDog();
+  const dogObj = useRecoilValue(dogState);
+  const { refetch } = useGetRandomDog();
 
-  useEffect(() => {
-    console.log(query.data);
-  }, [query.data]);
+  const handleBtn = () => {
+    refetch();
+  };
   return (
     <>
-      <button onClick={() => {}}>api call</button>
+      <button onClick={handleBtn}>api call</button>
       <div style={{ border: '1px solid black' }}>
         <img src={dogObj.src} alt={dogObj.alt} />
       </div>
