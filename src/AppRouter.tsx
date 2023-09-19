@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 const Text = lazy(() => import('./pages/Text'));
 const D3ChartPage = lazy(() => import('./pages/D3ChartPage'));
 const UplotChartPage = lazy(() => import('./pages/UplotChartPage'));
+const Dog = lazy(() => import('./pages/Dog/components/Dog'));
 
 export const AppRouter = () => {
   return (

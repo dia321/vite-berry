@@ -16,6 +16,7 @@ function App() {
       </Link>
       <Link to="/uplot">
         <button>uplotchart</button>
+      </Link>
       <Link to="/dog">
         <button>dog</button>
       </Link>
