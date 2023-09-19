@@ -14,6 +14,9 @@ function App() {
       <Link to="/d3">
         <button>d3chart</button>
       </Link>
+      <Link to="/uplot">
+        <button>uplotchart</button>
+      </Link>
       <AppRouter />
     </RecoilRoot>
   );

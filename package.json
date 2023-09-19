@@ -17,11 +17,14 @@
     "recoil": "^0.7.7"
   },
   "devDependencies": {
+    "@types/d3": "^7.4.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
+    "d3": "^7.8.5",
+    "dayjs": "^1.11.9",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard-with-typescript": "latest",
@@ -36,6 +39,8 @@
     "prettier": "^3.0.3",
     "react-router-dom": "^6.16.0",
     "typescript": "*",
+    "uplot": "^1.6.25",
+    "uplot-react": "^1.1.5",
     "vite": "^4.4.5"
   },
   "packageManager": "yarn@3.6.3"
