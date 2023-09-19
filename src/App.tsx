@@ -16,6 +16,8 @@ function App() {
       </Link>
       <Link to="/uplot">
         <button>uplotchart</button>
+      <Link to="/dog">
+        <button>dog</button>
       </Link>
       <AppRouter />
     </RecoilRoot>

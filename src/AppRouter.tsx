@@ -12,6 +12,7 @@ export const AppRouter = () => {
         <Route path="/text" element={<Text />} />
         <Route path="/d3" element={<D3ChartPage />} />
         <Route path="/uplot" element={<UplotChartPage />} />
+        <Route path="/dog" element={<Dog />} />
       </Routes>
     </Suspense>
   );
