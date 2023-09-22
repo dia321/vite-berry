@@ -25,7 +25,8 @@
     "no-multiple-empty-lines": "error",
     "react/react-in-jsx-scope": "off",
     "no-multi-spaces": "error",
-    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "@typescript-eslint/no-var-requires": 0
     // "@typescript-eslint/explicit-function-return-type": ["error", { "allowNames": [] }]
   },
   "settings": {

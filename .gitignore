@@ -28,3 +28,5 @@ yarn.lock
 .vite/
 .pnp.*
 .yarnrc.*
+
+chunk-report.html

@@ -1,0 +1,17 @@
+// {
+//   "plugins": [
+//     [
+//       "transform-imports",
+//       {
+//         "recoil": {
+//           "transform": "recoil/${member}",
+//           "preventFullImport": true
+//         },
+//         "@tanstack/react-query": {
+//           "transform": "@tanstack/${member}",
+//           "preventFullImport": true
+//         }
+//       }
+//     ]
+//   ]
+// }
