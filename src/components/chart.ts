@@ -57,6 +57,6 @@ const generateUplotData = (seriesCount: number, dataPointCount: number): number[
   return data;
 };
 
-export const d3ChartData = [...Array(10).keys()].map(() => generateD3Data(5, 100));
-
-export const uplotChartData = [...Array(10).keys()].map(() => generateUplotData(5, 100));
+export const d3ChartData = [...Array(10).keys()].map(() => generateD3Data(5, 10000));
+export const uplotChartData = [...Array(10).keys()].map(() => generateUplotData(5, 10000));
+export const chartjsData = [...Array(10).keys()].map(() => generateD3Data(5, 10000));
