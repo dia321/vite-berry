@@ -28,6 +28,6 @@
       "@stores/*": ["src/stores/*"]
     }
   },
-  "include": ["src", "stores/dog"],
+  "include": ["src", "stores/dog", "types"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
