@@ -34,6 +34,9 @@ function App() {
           <Link to="/infinite">
             <button>infinite</button>
           </Link>
+          <Link to="/chart">
+            <button>chart</button>
+          </Link>
         </>
       )}
       <AppRouter />

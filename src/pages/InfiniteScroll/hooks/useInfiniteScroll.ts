@@ -5,8 +5,14 @@ export const useInfiniteScroll = () => {
   return infiniteScroll({
     queryKey: ['infiniteScroll'],
     options: {
-      // getNextPageParam: (lastPage, allPages) => lastPage.nextCursor,
-      // getPreviousPageParam: (firstPage, allPages) => firstPage.prevCursor
+      getNextPageParam: (lastPage, allPages) => {
+        const nextPage = allPages.length + 1;
+        return lastPage.data.length === 0 ? undefined : nextPage;
+      },
+      select: (data) => ({
+        pages: data?.pages.flatMap((page) => page.data),
+        pageParams: data.pageParams
+      })
     }
   });
 };

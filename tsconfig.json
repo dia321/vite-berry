@@ -25,9 +25,10 @@
     "paths": {
       "@hooks/*": ["src/hooks/*"],
       "@api/*": ["src/api/*"],
-      "@stores/*": ["src/stores/*"]
+      "@stores/*": ["src/stores/*"],
+      "@component/*": ["src/components/*"]
     }
   },
-  "include": ["src", "stores/dog", "types"],
+  "include": ["src", "stores/dog"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
