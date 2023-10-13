@@ -15,11 +15,6 @@ function App() {
   }, [pathname]);
   return (
     <RecoilRoot>
-      {!root && (
-        <Link to="/">
-          <button>back</button>
-        </Link>
-      )}
       {root && (
         <>
           <Link to="/text">
@@ -38,6 +33,11 @@ function App() {
             <button>chart</button>
           </Link>
         </>
+      )}
+      {!root && (
+        <Link to="/" style={{ bottom: 0, right: 0, position: 'absolute' }}>
+          <button>back</button>
+        </Link>
       )}
       <AppRouter />
     </RecoilRoot>

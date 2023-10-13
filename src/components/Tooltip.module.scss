@@ -18,11 +18,11 @@
 }
 .fade-in {
   @apply opacity-100;
-  animation: fadeIn ease-in-out 500ms;
+  animation: fadeIn ease-in-out 100ms;
 }
 .fade-out {
   opacity: 0;
-  animation: fadeOut ease-in-out 1s;
+  animation: fadeOut ease-in-out 100ms;
 }
 .tooltip-container {
   border-radius: 4px;

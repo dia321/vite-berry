@@ -1,0 +1,19 @@
+@import 'NavBar.module';
+.side-menu {
+  @apply absolute;
+  width: 240px;
+  height: calc(100vh - $navbar-height);
+
+  bottom: 0;
+}
+
+.menu-container {
+  @apply whitespace-nowrap px-3 rounded-xl flex items-center ml-2 mr-4 text-sm;
+  height: 40px;
+  background-color: $basic-background-color;
+  .icon-container {
+    height: 24px;
+    width: 24px;
+    @apply mr-6;
+  }
+}

@@ -1,20 +1,18 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import styles from './Tooltip.module.scss';
 import React from 'react';
 interface TooltipProps {
   content: string;
   visible: boolean;
-  top?: string;
+  top?: number;
   nowrap?: boolean;
 }
+
+const ToolTipContainer = styled.div<{ top?: number }>`
+  top: ${(props) => (props.top ? props.top + 'px' : '60px')};
+`;
 const Tooltip = (props: TooltipProps) => {
   const { content, visible, nowrap = true, top = 60 } = props;
-  const ToolTipContainer = styled.div`
-    ${top &&
-    css`
-      top: ${top}px;
-    `}
-  `;
   // ${right &&
   // css`
   //   right: ${right}px;
@@ -26,6 +24,7 @@ const Tooltip = (props: TooltipProps) => {
         className={`${styles['tooltip-container']} ${
           visible ? styles['fade-in'] : styles['fade-out']
         }`}
+        top={top}
       >
         <p className={nowrap ? 'whitespace-nowrap' : ''}>{content}</p>
       </ToolTipContainer>

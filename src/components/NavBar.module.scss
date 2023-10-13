@@ -2,9 +2,12 @@ $searchInputWidth: 585px;
 $clicked: 100px;
 $searchButtonWidth: 64px;
 $center: calc((100% - $searchInputWidth - $searchButtonWidth) / 7 * 4);
+$navbar-height: 56px;
+$basic-background-color: #f8f8f8;
 
 .nav-bar {
   @apply fixed top-0 w-full px-4 flex flex-row items-center justify-between;
+  height: $navbar-height;
 }
 
 .partition {
@@ -75,11 +78,11 @@ $center: calc((100% - $searchInputWidth - $searchButtonWidth) / 7 * 4);
   }
 }
 .search-button-container {
-  @apply relative items-center flex flex-row pr-3;
+  @apply relative items-center flex pr-3;
   width: $searchButtonWidth;
   height: 40px;
   border: 1px solid #d3d3d3;
-  background-color: #f8f8f8;
+  background-color: $basic-background-color;
   border-radius: 0 40px 40px 0;
   flex-direction: row-reverse;
   &:hover {
@@ -90,7 +93,7 @@ $center: calc((100% - $searchInputWidth - $searchButtonWidth) / 7 * 4);
 }
 .speak-icon-container {
   @apply cursor-pointer mx-3;
-  background-color: #f8f8f8;
+  background-color: $basic-background-color;
   border-radius: 24px;
   height: 40px;
   &:hover {
@@ -111,11 +114,23 @@ $center: calc((100% - $searchInputWidth - $searchButtonWidth) / 7 * 4);
     border-radius: 24px;
   }
 }
+.red {
+  @apply text-white rounded-full text-xs absolute text-center;
+  font-weight: 400;
+  min-width: 8px;
+  max-width: 18px;
+  height: 18px;
+  background-color: #c00;
+  padding: 0 4px;
+  border: 2px solid white;
+  // transform: translateY(-190%);
+  top: 20%;
+}
 
 .user-container {
   @apply cursor-pointer text-white text-xl leading-9 mx-2;
   height: 40px;
   width: 40px;
   border-radius: 24px;
-  background-color: purple;
+  background-color: rgb(105, 3, 173);
 }
