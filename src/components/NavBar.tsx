@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import YoutubeLogo from '../assets/youtube-logo.svg?react';
-import BurgerMenu from '../assets/hamburger-menu.svg?react';
+import BurgerIcon from '../assets/hamburger-menu.svg?react';
 import SearchIcon from '../assets/search-icon.svg?react';
 import SpeackIcon from '../assets/speak-icon.svg?react';
 import NewVideoIcon from '../assets/new-video-icon.svg?react';
@@ -68,7 +68,7 @@ export const NavBar = () => {
       <NavBarArea className={styles['nav-bar']}>
         <Partition className={styles['partition']}>
           <BurgerContainer className={`${styles['burger-container']}`}>
-            <BurgerMenu className={styles['burger-menu']} />
+            <BurgerIcon className={styles['burger-menu']} />
           </BurgerContainer>
           <div className="flex cursor-pointer">
             <YoutubeLogo />

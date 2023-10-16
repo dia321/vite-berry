@@ -27,7 +27,9 @@
     "react/react-in-jsx-scope": "off",
     "no-multi-spaces": "error",
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
-    "@typescript-eslint/no-var-requires": 0
+    "@typescript-eslint/no-var-requires": 0,
+    //unknown property 무시하기 for three.js
+    "react/no-unknown-property": 0
     // "@typescript-eslint/explicit-function-return-type": ["error", { "allowNames": [] }]
   },
   "settings": {

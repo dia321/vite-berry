@@ -1,1 +1,1 @@
-export * from './YoutubeLayout';
+export * from './templates/YoutubeLayout';

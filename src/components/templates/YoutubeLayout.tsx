@@ -1,5 +1,5 @@
-import { NavBar } from './NavBar';
-import SideMenu from './SideMenu';
+import { NavBar } from '../NavBar';
+import SideMenu from '../SideMenu';
 
 export const YoutubeLayout = () => {
   return (

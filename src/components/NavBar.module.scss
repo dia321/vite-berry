@@ -3,10 +3,12 @@ $clicked: 100px;
 $searchButtonWidth: 64px;
 $center: calc((100% - $searchInputWidth - $searchButtonWidth) / 7 * 4);
 $navbar-height: 56px;
-$basic-background-color: #f8f8f8;
+$basic-background-color: rgba(0, 0, 0, 0.05);
+$hover-background-color: rgba(0, 0, 0, 0.1);
 
 .nav-bar {
   @apply fixed top-0 w-full px-4 flex flex-row items-center justify-between;
+  background-color: white;
   height: $navbar-height;
 }
 
@@ -15,10 +17,10 @@ $basic-background-color: #f8f8f8;
 }
 
 .burger-container {
-  @apply cursor-pointer ml-2;
-  margin-right: 24px;
+  @apply cursor-pointer p-2;
+  margin-right: 16px;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: $hover-background-color;
     border-radius: 24px;
   }
 }
@@ -97,7 +99,7 @@ $basic-background-color: #f8f8f8;
   border-radius: 24px;
   height: 40px;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: $hover-background-color;
   }
 }
 .shortcut-container {
@@ -110,7 +112,7 @@ $basic-background-color: #f8f8f8;
   @apply cursor-pointer;
   height: 40px;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: $hover-background-color;
     border-radius: 24px;
   }
 }
@@ -123,12 +125,12 @@ $basic-background-color: #f8f8f8;
   background-color: #c00;
   padding: 0 4px;
   border: 2px solid white;
-  // transform: translateY(-190%);
+  transform: translateX(110%);
   top: 20%;
 }
 
 .user-container {
-  @apply cursor-pointer text-white text-xl leading-9 mx-2;
+  @apply cursor-pointer text-white text-xl leading-9 mx-2 text-center;
   height: 40px;
   width: 40px;
   border-radius: 24px;
