@@ -5,7 +5,8 @@ interface QueryOptions {
   enabled?: boolean;
   staleTime?: number;
   cacheTime?: number;
-  onSuccess?: ({ data }) => void;
+  // eslint-disable-next-line no-unused-vars
+  onSuccess?: ({ data }: { data: { message: string } }) => void;
 }
 
 // 베이스쿼리

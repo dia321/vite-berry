@@ -7,7 +7,8 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
@@ -25,7 +26,10 @@
     "no-multiple-empty-lines": "error",
     "react/react-in-jsx-scope": "off",
     "no-multi-spaces": "error",
-    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "@typescript-eslint/no-var-requires": 0,
+    //unknown property 무시하기 for three.js
+    "react/no-unknown-property": 0
     // "@typescript-eslint/explicit-function-return-type": ["error", { "allowNames": [] }]
   },
   "settings": {
