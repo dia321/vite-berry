@@ -20,9 +20,6 @@ function App() {
           <Link to="/text">
             <button>text</button>
           </Link>
-          <Link to="/d3">
-            <button>d3chart</button>
-          </Link>
           <Link to="/dog">
             <button>dog</button>
           </Link>
@@ -31,6 +28,15 @@ function App() {
           </Link>
           <Link to="/chart">
             <button>chart</button>
+          </Link>
+          <Link to="/d3">
+            <button>d3chart</button>
+          </Link>
+          <Link to="/uplot">
+            <button>uplotchart</button>
+          </Link>
+          <Link to="/chartjs">
+            <button>chartjs</button>
           </Link>
         </>
       )}
