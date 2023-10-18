@@ -4,6 +4,7 @@ import Chart from './pages/Chart/components/Chart';
 
 const Text = lazy(() => import('./pages/Text'));
 const D3ChartPage = lazy(() => import('./pages/D3ChartPage'));
+const ThreejsChartPage = lazy(() => import('./pages/ThreejsChartPage'));
 const UplotChartPage = lazy(() => import('./pages/UplotChartPage'));
 const ChartjsPage = lazy(() => import('./pages/ChartjsPage'));
 const Dog = lazy(() => import('./pages/Dog/components/Dog'));
@@ -20,6 +21,7 @@ export const AppRouter = () => {
         <Route path="/dog" element={<Dog />} />
         <Route path="/infinite" element={<InfiniteScroll />} />
         <Route path="/chart" element={<Chart />} />
+        <Route path="/threejs" element={<ThreejsChartPage />} />
       </Routes>
     </Suspense>
   );

@@ -38,6 +38,9 @@ function App() {
           <Link to="/chartjs">
             <button>chartjs</button>
           </Link>
+          <Link to="/threejs">
+            <button>threejs</button>
+          </Link>
         </>
       )}
       {!root && (
