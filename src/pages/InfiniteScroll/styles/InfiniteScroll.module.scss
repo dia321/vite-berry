@@ -1,0 +1,32 @@
+.container {
+  @apply block p-5;
+  height: 100vh;
+}
+
+.scroll-area-container {
+  @apply w-1/4 border p-5 overflow-y-scroll;
+  height: 500px;
+  .indicator {
+    @apply flex fixed;
+    right: 65%;
+  }
+  .scroll-area {
+    height: 100vh;
+    .dummy-space {
+      height: 100vh;
+    }
+  }
+}
+
+@keyframes downside {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+.down-icon-container {
+  // animation: downside duration timing-function delay iteration-count direction fill-mode;
+  animation: downside 1s linear 0s infinite normal none;
+}

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import styles from './Tooltip.module.scss';
-import React from 'react';
+
 interface TooltipProps {
   content: string;
   visible: boolean;

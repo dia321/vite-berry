@@ -5,8 +5,12 @@ import { useState } from 'react';
 import { Cube } from 'src/pages/Chart/modules/Cube';
 import Tyranno from '../modules/Tyranno';
 
-const Content = styled.div``;
 const TabContainer = styled.div``;
+const Content = styled.div``;
+const CanvasContainer = styled.div`
+  width: 30%;
+  border: 1px solid lightgray;
+`;
 const Chart = () => {
   const tabList = ['total', 'cube', 'tyranno'];
   const [selected, setSelected] = useState<{ [key: string]: boolean }>(
@@ -47,12 +51,24 @@ const Chart = () => {
         <Content className={s['content']}>
           {selected.total && (
             <>
-              <Cube />
-              <Tyranno />
+              <CanvasContainer>
+                <Cube />
+              </CanvasContainer>
+              <CanvasContainer>
+                <Tyranno />
+              </CanvasContainer>
             </>
           )}
-          {!selected.total && selected.cube && <Cube />}
-          {!selected.total && selected.tyranno && <Tyranno />}
+          {!selected.total && selected.cube && (
+            <CanvasContainer>
+              <Cube />
+            </CanvasContainer>
+          )}
+          {!selected.total && selected.tyranno && (
+            <CanvasContainer>
+              <Tyranno />
+            </CanvasContainer>
+          )}
         </Content>
       </div>
     </div>

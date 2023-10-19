@@ -9,7 +9,7 @@ interface UPlotChartProps {
 export const UPlotChart: React.FC<UPlotChartProps> = ({ chartData }) => {
   let seriesData: number[][] = [];
   let options: any = {};
-  
+
   if (chartData.length > 0) {
     seriesData = chartData
       .slice(1)

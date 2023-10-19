@@ -6,11 +6,14 @@ export const getRandomDogAPI = () =>
     url: '/api/breeds/image/random'
   });
 
-export const fetchNextPages = async ({ pageParam = 0 }) => {
+const totalPage = 100;
+export const getDogWithPageAPI = async (page: number) => {
   const sto = new Promise((resolve) => {
     setTimeout(async () => {
-      resolve(pageParam + 5);
-    }, 5000);
+      API.request({ method: 'get', url: '/api/breeds/image/random' }).then((res) => {
+        resolve({ data: res.data, page: page, totalPage: totalPage });
+      });
+    }, 100);
   });
   return sto;
 };
