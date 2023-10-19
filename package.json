@@ -66,7 +66,8 @@
     "vite": "^4.4.5",
     "vite-plugin-chunk-split": "^0.4.7",
     "vite-plugin-svgr": "^4.1.0",
-    "vite-tsconfig-paths": "^4.2.1"
+    "vite-tsconfig-paths": "^4.2.1",
+    "webgl-plot": "^0.7.1"
   },
   "packageManager": "yarn@3.6.3"
 }
